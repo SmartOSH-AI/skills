@@ -45,17 +45,7 @@ estructurado con validación humana en cada paso y referenciando normativa verif
 5. **Cierre** — conclusiones, plan SMART, lecciones aprendidas.
 6. **Comparación entre métodos** (opcional) y **checklist de cierre**.
 
-### Estructura
-
-```
-investigacion-accidentes-smartosh/
-├── SKILL.md                              # Identidad, flujo y plantillas
-└── references/
-    ├── referencias_normativas.md         # Marco legal y fuentes citables
-    └── conector_mysmartosh.md            # Catálogo de funciones del conector por fase
-```
-
-### Integración con MySmartOSH (opcional)
+### Integración con MySmartOSH
 
 Cuando el conector está disponible, el skill usa funciones reales de la plataforma:
 
@@ -68,16 +58,6 @@ Cuando el conector está disponible, el skill usa funciones reales de la platafo
 El skill funciona también **sin conector**: en ese caso pide los datos al usuario y entrega el informe en
 el chat o como archivo. La metodología vive en el propio skill (es la fuente de verdad), por lo que no
 necesita llamar a `get_smartosh_methodology`.
-
-### Referencias normativas
-
-Marco legal y guías que el skill puede citar (detalle en `references/referencias_normativas.md`):
-
-- **Ley 31/1995 (LPRL)** — arts. 16 (deber de investigar) y 23 (documentación); **RD 39/1997**.
-- **NTP del INSST:** 274 (árbol de causas), 442 (procedimiento), 592/593/594 (gestión integral),
-  924 (clasificación de causas), 405 y 415 (factor humano).
-- Marcos internacionales: **Reason** (queso suizo, GEMS), **SHELL**, **ICAM**, **5 Porqués**, **Ishikawa**,
-  jerarquía de controles; guías **OSHA** y **OIT/ILO**.
 
 ---
 
@@ -95,18 +75,6 @@ Marco legal y guías que el skill puede citar (detalle en `references/referencia
 4. El skill aparecerá en tu lista; actívalo con el conmutador.
 
 Guía oficial: <https://support.claude.com/en/articles/12512180-use-skills-in-claude>
-
-### En Claude Code
-
-Descarga y descomprime la carpeta del skill dentro de tu directorio de skills:
-
-```bash
-cd ~/.claude/skills/
-curl -L -o investigacion-accidentes-smartosh.skill \
-  https://github.com/SmartOSH-AI/skills/raw/main/investigacion-accidentes-smartosh.skill
-unzip investigacion-accidentes-smartosh.skill
-# verifica que exista ~/.claude/skills/investigacion-accidentes-smartosh/SKILL.md
-```
 
 ---
 
@@ -133,18 +101,6 @@ ejecuta: instala solo desde fuentes en las que confíes y revisa los ficheros an
 
 ---
 
-## Contribuir
-
-¿Aportas una skill nueva o una mejora? Sugerencias:
-
-- Una carpeta por skill, con `SKILL.md` y, si procede, `references/` para el detalle.
-- Descripción del `SKILL.md` clara sobre **qué hace** y **cuándo activarse** (es el mecanismo de
-  activación).
-- Añade la skill a la tabla de *Skills disponibles* y describe los cambios en tu Pull Request.
-
----
-
 ## Licencia
 
-Añade aquí la licencia del repositorio (por ejemplo, MIT o Apache-2.0). Hasta entonces, todos los derechos
-reservados por sus autores.
+Todos los derechos reservados por sus autores.
