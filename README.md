@@ -11,9 +11,9 @@ usar: Claude la activa automáticamente cuando la conversación encaja con su á
 
 ## Skills disponibles
 
-| Skill | Descripción | Estado |
-| :-- | :-- | :-- |
-| [`investigacion-accidentes-smartosh`](#skill-investigacion-accidentes-smartosh) | Investigación de accidentes e incidentes laborales en España con enfoque sistémico y no punitivo. | v1.0.0 |
+| Skill | Descripción | Estado | Descarga |
+| :-- | :-- | :-- | :-- |
+| [`investigacion-accidentes-smartosh`](#skill-investigacion-accidentes-smartosh) | Investigación de accidentes e incidentes laborales en España con enfoque sistémico y no punitivo. | v1.0.0 | [⬇️ Descargar](https://github.com/SmartOSH-AI/skills/raw/main/investigacion-accidentes-smartosh.skill) |
 
 ---
 
@@ -21,6 +21,8 @@ usar: Claude la activa automáticamente cuando la conversación encaja con su á
 
 Guía a Claude para actuar como experto en investigación de accidentes (España), aplicando un flujo
 estructurado con validación humana en cada paso y referenciando normativa verificada.
+
+**[⬇️ Descargar `investigacion-accidentes-smartosh.skill`](https://github.com/SmartOSH-AI/skills/raw/main/investigacion-accidentes-smartosh.skill)**
 
 ### Qué hace
 
@@ -86,7 +88,7 @@ Marco legal y guías que el skill puede citar (detalle en `references/referencia
 
 ### En Claude.ai (web / app)
 
-1. Descarga el `.skill` (o `.zip`) del skill desde este repositorio.
+1. Descarga el skill: [**`investigacion-accidentes-smartosh.skill`**](https://github.com/SmartOSH-AI/skills/raw/main/investigacion-accidentes-smartosh.skill).
 2. Ve a **Customize → Skills**.
 3. Pulsa **Upload skill** y selecciona el archivo. El ZIP debe contener una carpeta con un `SKILL.md`
    válido. *(Si el cargador no acepta la extensión `.skill`, renómbrala a `.zip`: es el mismo formato.)*
@@ -96,10 +98,13 @@ Guía oficial: <https://support.claude.com/en/articles/12512180-use-skills-in-cl
 
 ### En Claude Code
 
-Descomprime la carpeta del skill dentro de tu directorio de skills:
+Descarga y descomprime la carpeta del skill dentro de tu directorio de skills:
 
 ```bash
-unzip investigacion-accidentes-smartosh.skill -d ~/.claude/skills/
+cd ~/.claude/skills/
+curl -L -o investigacion-accidentes-smartosh.skill \
+  https://github.com/SmartOSH-AI/skills/raw/main/investigacion-accidentes-smartosh.skill
+unzip investigacion-accidentes-smartosh.skill
 # verifica que exista ~/.claude/skills/investigacion-accidentes-smartosh/SKILL.md
 ```
 
