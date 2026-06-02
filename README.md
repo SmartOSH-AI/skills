@@ -1,6 +1,6 @@
 # SmartOSH Skills
 
-Colección de **Agent Skills para Claude** orientadas a Prevención de Riesgos Laborales (PRL) y a las
+Colección de **Agent Skills para Claude y clientes compatibles** orientadas a Prevención de Riesgos Laborales (PRL) y a las
 plataformas **SmartOSH** y **MySmartOSH**. Cada skill encapsula una metodología de trabajo lista para
 usar: Claude la activa automáticamente cuando la conversación encaja con su ámbito.
 
